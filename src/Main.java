@@ -1,11 +1,9 @@
 public class Main {
-
     public static void allFlowers(Flower[] flowers) {
         for (Flower item : flowers) {
             System.out.println(item.toString());
         }
     }
-
     public static void main(String[] args) {
 
         Flower[] flowers = new Flower[4];
@@ -19,7 +17,5 @@ public class Main {
                 19.5f, 10);
 
         allFlowers(flowers);
-
-
     }
 }

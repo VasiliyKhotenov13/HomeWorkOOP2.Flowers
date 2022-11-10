@@ -4,7 +4,6 @@ public class Flower {
     private float cost;
     int lifeSpan;
     private final String flowerName;
-
     public Flower(String flowerName, String flowerColor, String country, float cost) {
         this.flowerName = flowerName;
         if (flowerColor == null || flowerColor.length() == 0) {
@@ -24,7 +23,6 @@ public class Flower {
         }
         this.lifeSpan = 1;
     }
-
     public Flower(String flowerName, String flowerColor, String country, float cost, int lifeSpan) {
         this.flowerName = flowerName;
         if (flowerColor == null || flowerColor.length() == 0) {
