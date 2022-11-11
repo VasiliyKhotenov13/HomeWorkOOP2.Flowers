@@ -19,7 +19,6 @@ public class Main {
         System.out.println("Стоимость букета: " + totalCost);
         System.out.println("Минимальная стойкость цветка: " + minLifeSpan);
     }
-
     public static void main(String[] args) {
 
         Flower[] flowers = new Flower[4];
