@@ -4,6 +4,22 @@ public class Main {
             System.out.println(item.toString());
         }
     }
+
+    public static void bouquetOfFlowers(Flower... flowers) {
+        float totalCost = 0;
+        int minLifeSpan = 999;
+        for (Flower item: flowers) {
+            if (item.lifeSpan < minLifeSpan) {
+                minLifeSpan = item.lifeSpan;
+            }
+            totalCost += item.getCost();
+            System.out.println(item);
+        }
+        totalCost = totalCost * 1.1f;
+        System.out.println("Стоимость букета: " + totalCost);
+        System.out.println("Минимальная стойкость цветка: " + minLifeSpan);
+    }
+
     public static void main(String[] args) {
 
         Flower[] flowers = new Flower[4];
@@ -17,5 +33,9 @@ public class Main {
                 19.5f, 10);
 
         allFlowers(flowers);
+
+        bouquetOfFlowers(flowers[0], flowers[0], flowers[0],
+                flowers[1],flowers[1],flowers[1],flowers[1],flowers[1],
+                flowers[3]);
     }
 }
